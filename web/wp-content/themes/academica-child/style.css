@@ -762,6 +762,19 @@ img.aligncenter,
 	text-decoration: none;
 }
 
+.entry-content a, .entry-summary a {
+    text-decoration: underline;
+}
+
+.entry-content a:hover, .entry-summary a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+a.more-link {
+    text-decoration: none;
+}
+
 .posts .sticky {
 	border-bottom: 0;
  	background-color: #f1f1f1;
