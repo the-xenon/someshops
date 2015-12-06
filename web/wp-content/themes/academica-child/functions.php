@@ -328,36 +328,38 @@ if ( ! function_exists( 'academica_entry_meta' ) ) :
 /**
  * Prints HTML with meta information for current post: categories, tags, permalink, author, and date.
 */
-function academica_entry_meta() {
-	// Translators: used between list items, there is a space after the comma.
-	$categories_list = get_the_category_list( __( ', ', 'academica' ) );
+function academica_entry_meta($show_tags = false) {
+    // Translators: used between list items, there is a space after the comma.
+    $categories_list = get_the_category_list( __( ', ', 'academica' ) );
 
-	$date = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a>',
-		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() )
-	);
+    $date = sprintf( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
+        esc_attr( get_the_date( 'c' ) ),
+        esc_html( get_the_date() )
+    );
 
-	$author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'academica' ), get_the_author() ) ),
-		get_the_author()
-	);
+    $author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+        esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+        esc_attr( sprintf( __( 'View all posts by %s', 'academica' ), get_the_author() ) ),
+        get_the_author()
+    );
 
-	// Translators: 1 is the author's name, 2 is category, and 3 is the date.
-	if ( $categories_list ) {
-		$utility_text = __( '<span class="by-author">By %1$s </span>in <span class="category">%2$s</span> on <span class="datetime">%3$s</span>.', 'academica' );
-	} else {
-		$utility_text = __( '<span class="by-author">By %1$s </span>on <span class="datetime">%3$s</span>.', 'academica' );
-	}
+    // Translators: 1 is the author's name, 2 is category, and 3 is the date.
+    if ( $categories_list ) {
+        $utility_text = __( '<span class="by-author">By %1$s </span>in <span class="category">%2$s</span> on <span class="datetime">%3$s</span>.', 'academica' );
+    } else {
+        $utility_text = __( '<span class="by-author">By %1$s </span>on <span class="datetime">%3$s</span>.', 'academica' );
+    }
 
-	printf(
-		$utility_text,
-		$author,
-		$categories_list,
-		$date
-	);
+    printf(
+        $utility_text,
+        $author,
+        $categories_list,
+        $date
+    );
+
+    if ($show_tags) {
+        the_tags( '<span class="tags"> | ' . __( 'Tags:', 'academica' ), ', ', '</span>' );
+    }
 }
 
 endif;
