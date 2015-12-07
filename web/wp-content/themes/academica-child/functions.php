@@ -176,6 +176,7 @@ function academica_widgets_count_class( $index = 1 ) {
  * @return string Filtered title.
  */
 function academica_wp_title( $title, $sep ) {
+    return $title;
 
 	if ( is_feed() )
 		return $title;
