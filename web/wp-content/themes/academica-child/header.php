@@ -13,7 +13,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<?php wp_head(); ?>
-
+	
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
 </head>
 
 <body <?php body_class(); ?>>

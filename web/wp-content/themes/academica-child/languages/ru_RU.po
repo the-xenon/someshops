@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Academica\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sat Apr 25 2015 12:26:58 GMT+0600 (Local Standard Time)\n"
-"PO-Revision-Date: Sat Apr 25 2015 12:31:12 GMT+0600 (Local Standard Time)\n"
+"PO-Revision-Date: Sun Dec 06 2015 22:52:52 GMT+0600 (Local Standard Time)\n"
 "Last-Translator: master <xenon@inbox.ru>\n"
 "Language-Team: \n"
 "Language: Russian\n"
@@ -142,14 +142,6 @@ msgstr ""
 msgid "Permanent Link to %s"
 msgstr ""
 
-#: ../content.php:21 ../comments.php:15 ../functions.php:220
-msgid "Leave a comment"
-msgstr "Оставить комментарий"
-
-#: ../content-single.php:13
-msgid "Tags:"
-msgstr "Метки:"
-
 #: ../comments.php:23
 msgid "Comment navigation"
 msgstr ""
@@ -208,23 +200,6 @@ msgstr ""
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
-
-#. Translators: 1 is the author's name, 2 is category, and 3 is the date.
-#: ../functions.php:350
-#, php-format
-msgid ""
-"<span class=\"by-author\">By %1$s </span>in <span class=\"category\">%2$s</span> "
-"on <span class=\"datetime\">%3$s</span>."
-msgstr ""
-"<span class=\"by-author\">Автор: %1$s</span>. Рубрика: <span "
-"class=\"category\">%2$s</span>. <span class=\"datetime\">%3$s</span>"
-
-#: ../functions.php:352
-#, php-format
-msgid "<span class=\"by-author\">By %1$s </span>on <span class=\"datetime\">%3$s</span>."
-msgstr ""
-"<span class=\"by-author\">Автор: %1$s</span>. Рубрика: <span "
-"class=\"datetime\">%3$s</span>"
 
 #: ../functions.php:376
 msgid "Post navigation"
@@ -381,3 +356,28 @@ msgstr ""
 #: ../inc/customizer/bootstrap.php:97
 msgid "Header Background Color"
 msgstr ""
+
+#: ../content.php:21 ../comments.php:15 ../functions.php:220
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: ../content-single.php:13
+msgid "Tags:"
+msgstr "Метки:"
+
+#. Translators: 1 is the author's name, 2 is category, and 3 is the date.
+#: ../functions.php:350
+#, php-format
+msgid ""
+"<span class=\"by-author\">By %1$s </span>in <span class=\"category\">%2$s</span> "
+"on <span class=\"datetime\">%3$s</span>."
+msgstr ""
+"Рубрика: <span class=\"category\">%2$s</span> | Автор: <span class=\"by-"
+"author\">%1$s</span> | Дата: <span class=\"datetime\">%3$s</span>"
+
+#: ../functions.php:352
+#, php-format
+msgid "<span class=\"by-author\">By %1$s </span>on <span class=\"datetime\">%3$s</span>."
+msgstr ""
+"Рубрика: <span class=\"category\">%2$s</span> | Автор: <span class=\"by-"
+"author\">%1$s</span>"

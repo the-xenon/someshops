@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-08 15:18:43+0000\n"
+"PO-Revision-Date: 2015-12-10 13:58:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -7532,11 +7532,6 @@ msgstr "Отправить"
 msgid "Tags: "
 msgstr "Метки: "
 
-#. translators: %s: comments count
-#: wp-includes/script-loader.php:492
-msgid "Comments (%s)"
-msgstr "Комментарии (%)"
-
 #: wp-includes/theme-compat/comments-popup.php:118
 msgid "Sorry, no posts matched your criteria."
 msgstr "Извините, нет записей, удовлетворяющих вашим условиям."
@@ -7717,6 +7712,11 @@ msgid_plural "%s topics"
 msgstr[0] "%s запись"
 msgstr[1] "%s записи"
 msgstr[2] "%s записей"
+
+#. translators: %s: comments count
+#: wp-includes/script-loader.php:492
+msgid "Comments (%s)"
+msgstr "Комментарии (%s)"
 
 #: wp-includes/category-template.php:536
 #: wp-includes/theme-compat/sidebar.php:98

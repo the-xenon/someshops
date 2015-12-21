@@ -378,7 +378,7 @@ ol ul {
 }
 
 ul > li {
-	list-style-type: square;
+	list-style-type: disk;
 }
 
 ol > li {
@@ -1398,6 +1398,23 @@ p.pages {
     clear: both;
 }
 
+/* VK vidget */
+
+#vk_groups {
+	width: 100% !important;
+	max-width: 250px;
+}
+
+/* list and picture margin problem fix*/
+ul:not([class]),
+ol:not([class]) {
+    padding-left: 0;
+    padding-right: 1.0em;
+}
+ul:not([class]) li,
+ol:not([class]) li {
+    transform: translateX(1.0em);
+}
 
 
 /* jQuery.mmenu CSS */
